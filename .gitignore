@@ -1,0 +1,3 @@
+
+# files added here will be ignored when committing
+.env

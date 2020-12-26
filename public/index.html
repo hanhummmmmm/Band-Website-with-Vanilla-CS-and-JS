@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="custom.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Lato&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <title>Flowerface | Homepage</title>
+</head>
+<body>
+    <header class="hero-image h-96"> <!--does not apply any styling  but tells page its the header -->
+        <nav class="border-white border-b-2 border-opacity-30">  <!--does not apply any styling  but tells page its the navbar -->
+            <ul class="flex flex-row justify-center space-x-10 pt-2">
+                <li class="menu-item"> <a href="index.html"> HOME </a> </li>
+                <li class="menu-item"> <a href="about.html"> ABOUT </a></li>
+                <li class="menu-item"> <a href="store.html"> STORE </a> </li>
+            </ul>
+        </nav>
+        <!--TODO: Find a suitable background image -->
+        <div class="flex flex-col justify-center mt-8">
+            <div class="flex justify-center mt-5 my-auto">
+                <h1 class="font-cursive text-white text-7xl md:text-9xl"> Flowerface </h1>
+            </div>
+            <div class="flex flex-col sm:flex-row sm:justify-center items-center flex-col-reverse pt-5 pb-5">
+                <a href="#" class="btn-nav rounded-xl font-extralight">Get our latest album</a>
+                <!--buttons are inherently inline elements like span -->
+                <a href="#" class="btn-nav rounded-full sm:mb-0 mb-2">&#9658;</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="w-5\/6 mx-auto mt-10">
+        <h2 class="font-serif text-3xl text-gray-600 text-center">TOURS</h2>
+        
+        <div class="mt-10 flex flex-col mx-auto w-min">
+
+            <div class="tour-item">
+                <strong class="font-sans text-lg font-bold text-black w-64 lg:w-20 text-center lg:text-left"> JUL 19 </strong>
+                <span class="lg:ml-5 text-default lg:w-64 text-center lg:text-left"> DAVAO CITY, PHILIPPINES </span>
+                <span class="lg:ml-10 mr-5 text-default lg:w-64 text-center lg:text-left"> MT. APO AUDITORIUM </span> 
+                <span class="bg-purple-dark rounded-full text-white font-serif \32xl\:font-semibold p-1 text-align text-center mx-auto w-32 lg:w-40 hover:bg-gray-800 hover:bg-opacity-30"> <a href=""> BUY TICKETS </a> </span>
+            </div>
+
+            <div class="tour-item">
+                <strong class="font-sans text-lg font-bold text-black  w-64 lg:w-20 text-center lg:text-left"> JUL 16 </strong>
+                <!--html automatically removes any empty spaces between tags -->
+                <span class="lg:ml-5 text-default lg:w-64 text-center lg:text-left"> LAGUNA, PHILIPPINES </span>
+                <span class="lg:ml-10 mr-5 text-default lg:w-64 text-center lg:text-left"> MT. MAYON MUSIC THEATRE </span> 
+                <span class="bg-purple-dark rounded-full text-white font-serif p-1 text-align text-center mx-auto w-32 lg:w-40 hover:bg-gray-800 hover:bg-opacity-30"> <a href=""> BUY TICKETS </a> </span>
+            </div>
+
+
+            <div class="tour-item">
+                <strong class="font-sans text-lg font-bold text-black  w-64 lg:w-20 text-center lg:text-left"> JUL 22 </strong>
+                <span class="lg:ml-5 text-default lg:w-64 text-center lg:text-left"> BENGUET, PHILIPPINES </span>
+                <span class="lg:ml-10 mr-5 text-default lg:w-64 text-center lg:text-left"> MT. PULAG CONCERT HALL </span>
+                <span class="bg-purple-dark rounded-full text-white font-serif \32xl\:font-semibold p-1 text-align text-center mx-auto w-32 lg:w-40 hover:bg-gray-800 hover:bg-opacity-30"> <a href=""> BUY TICKETS </a> </span>
+            </div>
+
+            <div class="tour-item">
+                <strong class="font-sans text-lg font-bold text-black  w-64 lg:w-20 text-center lg:text-left"> JUL 28 </strong>
+                <span class="lg:ml-5 text-default lg:w-64 text-center lg:text-left"> BUKIDNON, PHILIPPINES </span>
+                <span class="lg:ml-10 mr-5 text-default lg:w-64 text-center lg:text-left"> MT. KITANGLAD ARENA </span> 
+                <span class="bg-purple-dark rounded-full text-white font-serif \32xl\:font-semibold p-1 text-align text-center mx-auto w-32 lg:w-40 hover:bg-gray-800 hover:bg-opacity-30"> <a href=""> BUY TICKETS </a> </span>
+            </div>
+
+            <div class="tour-item">
+                <strong class="font-sans text-lg font-bold text-black  w-64 lg:w-20 text-center lg:text-left"> JUL 30 </strong>
+                <span class="lg:ml-5 text-default lg:w-64 text-center lg:text-left"> NEGROS, PHILIPPINES </span>
+                <span class="lg:ml-10 mr-5  text-default lg:w-64 text-center lg:text-left"> MT. CANLAON PAVILLION </span> 
+                <span class="bg-purple-dark rounded-full text-white font-serif \32xl\:font-semibold p-1 text-align text-center mx-auto w-32 lg:w-40 hover:bg-gray-800 hover:bg-opacity-30"> <a href=""> BUY TICKETS </a> </span>
+            </div>
+
+            <div class="tour-item">
+                <strong class="font-sans text-lg font-bold text-black  w-64 lg:w-20 text-center lg:text-left"> AUG 1 </strong>
+                <span class="lg:ml-5 text-default lg:w-64 text-center lg:text-left"> PAMPANGA, PHILIPPINES </span>
+                <span class="lg:ml-10 mr-5 text-default lg:w-64 text-center lg:text-left"> MT. PINATUBO STAGE </span> 
+                <span class="bg-purple-dark rounded-full text-white font-serif \32xl\:font-semibold p-1 text-align text-center mx-auto w-32 lg:w-40 hover:bg-gray-800 hover:bg-opacity-30"> <a href=""> BUY TICKETS </a> </span>
+            </div>
+        </div>
+
+    <footer class="bg-purple-light mt-10"> 
+        <div class="flex flex-row justify-between">
+            <h3 class="font-cursive text-white text-5xl self-center ml-5">Flowerface</h3>
+            <ul class="flex flex-col">
+                <li><a href="https://facebook.com" target="_blank"><img class="footer-social-icon m-1 mt-2 mr-5" src="Images/Facebook Logo.png" alt="Facebook logo"></a></li>
+                <li><a href="https://spotify.com" target="_blank"><img class="footer-social-icon m-1 mr-5" src="Images/Spotify Logo.png" alt="Spotify logo"></a></li>
+                <li><a href="https://youtube.com" target="_blank"><img class="footer-social-icon m-1 mb-2 mr-5" src="Images/YouTube Logo.png" alt="Youtube logo"></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
