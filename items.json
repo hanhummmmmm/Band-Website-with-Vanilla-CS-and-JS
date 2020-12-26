@@ -1,0 +1,49 @@
+{
+    "music":[
+        {
+            "id":1,
+            "name":"Baby Teeth",
+            "price":1299,
+            "imgName":"album_babyteeth.jpg"
+        },
+        {
+            "id":2,
+            "name":"Ruth",
+            "price":1199,
+            "imgName":"album_ruth.jpg"
+        },
+        {
+            "id":3,
+            "name":"Bedhead",
+            "price":1299,
+            "imgName":"album_bedhead.jpg"
+        },
+        {
+            "id":4,
+            "name":"Homesick",
+            "price":999,
+            "imgName":"album_homesick.jpg"
+        }
+
+    ],
+
+    "merch":[
+        {
+            "id":5,
+            "name":"Bouquet",
+            "price":299,
+            "imgName":"merch_flowercrown.jpg",
+            "colStart":2
+        },
+        {
+            "id":3,
+            "name":"Beanie",
+            "price":899,
+            "imgName":"merch_beanie.jpg",
+            "colStart":3
+        }
+
+
+
+    ]
+}

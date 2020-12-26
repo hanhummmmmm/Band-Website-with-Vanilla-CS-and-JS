@@ -1,0 +1,45 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+.btn-nav{
+    @apply flex-grow-0 font-light font-serif text-2xl text-white border-2 p-2 mr-5 hover:bg-gray-200 hover:bg-opacity-70;
+}
+
+.menu-item{
+    @apply font-serif text-white hover:bg-gray-200 hover:bg-opacity-70 text-xl;
+}
+
+.text-default{
+    @apply font-sans text-lg text-gray-600;
+}
+
+.footer-social-icon{
+    @apply w-6 h-6;
+}
+
+.tour-item{
+    @apply flex flex-col lg:flex-row lg:items-end border-b-2 border-gray-100 pb-2 mb-1 justify-center;
+}
+
+.table-bottom-border{
+    @apply border-gray-400 border-b-2 border-opacity-20 pl-10 pr-10 mb-2;
+}
+
+.btn-remove{
+    @apply bg-pink rounded-full text-white font-serif text-base ml-2 p-1 pl-2 pr-2 text-center mx-auto max-w-max hover:bg-gray-800 hover:bg-opacity-30;
+}
+
+.cart-row{
+    @apply grid grid-cols-4 justify-items-center items-center mb-2;
+}
+
+.btn-item{
+    @apply bg-purple-dark rounded-full text-white font-serif text-base p-1 pl-2 pr-2 text-center mx-auto max-w-max hover:bg-gray-800 hover:bg-opacity-30;
+}
+
+.btn-purchase{
+    @apply flex flex-initial bg-purple-dark rounded-full text-white font-serif text-2xl p-1 pl-2 pr-2  text-center mx-auto max-w-max hover:bg-gray-800 hover:bg-opacity-30;
+}
