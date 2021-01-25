@@ -3,16 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Stripe </title>
 </head>
 <body>
-    <script src="https://js.stripe.com/v3/"> </script>
-    <script>
-    var stripePublicKey = '<%= stripePublicKey %>'
 
-    stripe.redirectToCheckOut({
-        sessionId: session.id
-    })
-    </script>
+<!-- <h1> STRIPE Initialization </h1>
+
+<button type='submit' id='btn'>Click Me</button> -->
+
+<h1> Cart </h1>
+
+<button type="submit" id="btn-1">Pay</button>
+<input type="number" id="item-quantity" value="3">
+
+
+
+
+<script src="https://js.stripe.com/v3/"> </script>
+<script charset="utf-8">
+
+var stripe = Stripe('pk_test_51I1lSSKYgawD41GaGvhAhDlBGjGcLm0oxWPjPHuPXzrU9DXwdSjaexeohLDVpQjNQ8MDNmonH4xGPExCgsfq4c6V00ZPmQHHDB')
+
+// fetch('/public-keys')
+//     .then((response) => response.json())
+//     .then((data) => {
+//         stripe = Stripe(data.key)
+//         // console.log('Success:', data)
+//     })
+//     .catch((error) => {
+//         console.log('Error:', error)
+//     })
+
+    /// TODO: Fetch this publisheable key froom server
+
+var button = document.getElementById('btn-1')
+var quantity = document.getElementById('item-quantity')
+
+button.addEventListener('click', function(e){
+    e.preventDefault()
+
+    // fetch('/create-checkout-session',{
+    //     method: 'POST',
+    //     headers: {
+    //         'Content-Type': 'application/json',
+    //     },
+    //     body: JSON.stringify({
+    //         quantity: quantity.value
+    //     }),
+    // })
+    // .then((response) => response.json())
+    // .then((session) => {
+    //     console.log('Success:', data)
+    //     stripe.redirectToCheckout({ sessionId: session.id })
+    // })
+    // .catch((error) => {
+    //     console.log('Error: ', error)
+    // })
+
+    //DOCUMENTATION METHOD
+
+
+    fetch('/create-checkout-session', {
+          method: 'POST',
+        })
+        .then(function(response) {
+          return response.json();
+        })
+        .then(function(session) {
+          return stripe.redirectToCheckout({ sessionId: session.id });
+        })
+        .then(function(result) {
+          // If `redirectToCheckout` fails due to a browser or network
+          // error, you should display the localized error message to your
+          // customer using `error.message`.
+          if (result.error) {
+            alert(result.error.message);
+          }
+        })
+        .catch(function(error) {
+          console.error('Error:', error);
+        });
+})
+
+ 
+
+// var btn = document.getElementById('btn')
+// btn.addEventListener('click', function(e){
+//     e.preventDefault()
+//     fetch('/my-route', {
+//         method: 'POST',
+//         headers: {
+//             'Content-Type': 'application/json',
+//         },
+//         body: JSON.stringify({
+//             test: 123,
+//             payment_method: 'pm_card_visa',
+//         }),
+
+//     })
+//         .then((response) => response.json())
+//         .then((data) => {
+//             // stripe = Stripe(data.key)
+//             console.log('Success:', data)
+//         })
+//         .catch((error) => {
+//             console.log('Error:', error)
+//         })
+// }) 
+</script>
 </body>
 </html>
